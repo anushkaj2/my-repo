@@ -1,4 +1,5 @@
-# Linear Regression: Batch Gradient Descent, Ground Up
+# Code from scratch
+# Linear Regression: Batch Gradient Descent
 
 import numpy as np
 import pandas as pd
