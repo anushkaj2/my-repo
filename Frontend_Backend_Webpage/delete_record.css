@@ -1,0 +1,42 @@
+/* delete_record.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: black;
+}
+
+body {
+    background-color: greenyellow;
+    background-image: url('microbes.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#pathogenList {
+    margin-top: 20px;
+}
+
+.pathogenItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

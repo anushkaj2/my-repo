@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA: Create</title>
+    <link rel="stylesheet" href="create_record.css">
+    <link rel="icon" type="image/x-icon" href="bacteria.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>Epidemic Archive</h1>
+        <h3> Pathogen: Create Record </h3>
+        <h3>Please enter your findings below: </h3>
+        <form id="pathogenForm">
+            <input type="text" id="pathogenId" name="pathogen_id" placeholder="Pathogen ID">
+            <input type="text" id="idealTemperature" name="ideal_temperature" placeholder="Ideal Temperature of Survival">
+            <input type="text" id="incubationPeriod" name="incubation_period" placeholder="Incubation Period">
+            <input type="text" id="pathogenicity" name="pathogenicity" placeholder="Pathogenicity">
+            <input type="text" id="transmissionMode" name="transmission_mode" placeholder="Transmission Mode">
+            <button type="submit" id="createBtn">Create</button>
+            <button type="submit" id="updateBtn" style="display:none;">Update</button>
+        </form>
+        <div id="pathogenList"></div>
+    </div>
+    <script src="create_record.js"></script>
+</body>
+</html>
+

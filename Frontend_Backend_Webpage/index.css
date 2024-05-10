@@ -1,0 +1,42 @@
+/* styles_firstpage.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(245, 245, 220, 0.8);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: greenyellow;
+    background-image: url('bacteria.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    color: brown;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(87, 22, 22);
+    font-weight: 200s;
+}
+.container1 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 50 px;
+    background-color: rgb(228, 131, 131);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(17, 5, 5);
+}
