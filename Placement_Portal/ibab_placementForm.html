@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="icon" type="image/x-icon" href="ip_ibab.ico">
+    <link rel="stylesheet" href="ip_styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form for Placements 2024-25</h1>
+        <form action="ip_backend.php" method="POST" enctype="multipart/form-data">
+            <label for="registration_no">Registration No:</label>
+            <input type="text" id="registration_no" name="registration_no" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="program">Program:</label>
+            <select id="program" name="program" required>
+                <option value="Biotechnology and Bioinformatics">Biotechnology and Bioinformatics</option>
+                <option value="Big Data Biology">Big Data Biology</option>
+                <option value="PhD">PhD</option>
+            </select>
+
+            <label for="area_of_interest">Area of Interest (Select up to 2):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="area_of_interest[]" value="Genomics"> Genomics</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="Statistical Programming(Clinal Trials)"> Statistical Programming(Clinical Trials)</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="Drug Design"> Drug Design</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="AI/ML"> AI/ML</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="Bioinformatics"> Bioinformatics</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="Algorithm development"> Algorithm development</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="Image Analysis"> Image Analysis</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="Experimental Biology"> Experimental Biology</label>
+                <label><input type="checkbox" name="area_of_interest[]" value="Others" id="others_checkbox"> Others</label>
+            </div>
+        
+            <!-- Text box for "Others" -->
+            <input type="text" id="others_textbox" name="others_value" placeholder="Please specify" style="display:none;"><br>
+
+            <label for="preferred_location">Preferred Location of Work:</label>
+            <input type="text" id="preferred_location" name="preferred_location" placeholder="Enter your preferred location" required>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="text" id="cgpa" name="cgpa" required>
+
+            <label for="cv">Upload CV (PDF):</label>
+            <input type="file" id="cv" name="cv" accept="application/pdf" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="ip_scripts.js"></script>
+</body>
+</html>

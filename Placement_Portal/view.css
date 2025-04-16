@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: auto; /* Increased from 50% */
+    height: auto; /* Remove fixed height to allow for dynamic content */
+    margin: 50px auto;
+    padding: 40px; /* Increased padding for more space */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 40px; /* Increased font size */
+    margin-bottom: 40px; /* Increased margin */
+}
+
+h2 {
+    font-size: 26px; /* Increased font size */
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px; /* Increased padding for larger buttons */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+    margin-top: 15px; /* Increased margin */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px; /* Increased top margin */
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increased padding for better readability */
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px; /* Increased font size */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Existing styles */
+
+#resumeContent {
+    margin-top: 30px; /* Increased margin */
+}
+
+#resumeContent iframe {
+    width: 100%;
+    height: 800px; /* Increased height for more content */
+    border: none;
+}
+
+#resumeContent a {
+    display: block;
+    margin-top: 20px; /* Increased margin */
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 18px; /* Increased font size */
+}
+
+#resumeContent a:hover {
+    text-decoration: underline;
+}
