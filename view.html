@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Unplaced Students</title>
+    <link rel="icon" type="image/x-icon" href="ip_ibab.ico">
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Placement Cell</h1>
+
+        <button id="viewUnplacedBtn">View Unplaced Students</button>
+        <div id="unplacedStudentsTable">
+            <!-- Unplaced students data will be inserted here -->
+        </div>
+
+        <button id="viewPlacedBtn">View Placed Students</button>
+        <div id="placedStudentsTable">
+            <!-- Placed students data will be inserted here -->
+        </div>
+
+        <h2>View Resume</h2>
+        <form id="resumeForm">
+            <input type="text" id="registrationNo" placeholder="Enter Student Registration Number" required>
+            <button type="submit">View Resume</button>
+        </form>
+        <div id="resumeContent">
+            <!-- Resume content will be displayed here -->
+        </div>
+
+        <h2>Add Student who has been Placed</h2>
+        <form id="checkStudentForm">
+            <input type="text" id="registrationNoCheck" placeholder="Registration Number" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <div id="existingEntrySection" style="display: none;">
+            <p id="existingEntryMessage"></p>
+            <button id="removeEntryBtn">Remove</button>
+            <button id="modifyEntryBtn">Modify</button>
+        </div>
+
+        <div id="addPlacedFormSection" style="display: none;">
+            <h3>Please enter the details below: </h3>
+            <input type="text" id="company" placeholder="Company" required>
+            <input type="text" id="position" placeholder="Position" required>
+            <input type="text" id="salary" placeholder="Salary" required>
+            <button id="addPlacedBtn">Add</button>
+        </div>
+
+        <div id="modifyEntrySection" style="display: none;">
+            <h3>Modify Entry</h3>
+            <input type="text" id="newCompany" placeholder="New Company" required>
+            <input type="text" id="newPosition" placeholder="New Position" required>
+            <input type="text" id="newSalary" placeholder="New Salary" required>
+            <button id="submitModificationBtn">Submit Changes</button>
+        </div>
+        
+        <div id="addPlacedMessage">
+            <!-- Success or error messages will be displayed here -->
+        </div>
+
+    </div>
+    <script src="view.js"></script>
+</body>
+</html>
+
