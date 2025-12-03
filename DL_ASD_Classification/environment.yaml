@@ -1,0 +1,48 @@
+name: asd-genomics
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - pytorch
+  - nvidia
+
+dependencies:
+  - python=3.10
+
+  # Core Stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - pip
+  - psutil
+
+
+  # Deep Learning
+  - pytorch
+  - pytorch-cuda=12.4  # GPU support for A100
+  - tensorflow=2.15    # Latest TF supporting Python 3.10 & GPUs
+
+
+  # ML / XGBoost
+  - xgboost            # GPU-enabled version via conda-forge
+
+
+  # Genomics / VEP
+  - ensembl-vep        # Installs VEP + perl + plugins
+  - perl-threaded
+  - htslib
+  - samtools
+
+
+  # Extra utilities
+  - pip:
+      - seaborn==0.13.2
+      - imbalanced-learn
+      - rich
+      - pyarrow
+      - multiprocess
+      - lightning  # optional for DL training helpers
+
